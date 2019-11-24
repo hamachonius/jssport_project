@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+         {% load static %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="companyinfo">
+      <meta name="keywords" content="company, career, Japan">
+      <meta name="author" content="Naoki Hamanaka">
+      <link rel="stylesheet" type="text/css" href="{% static 'company/home.css' %}">
+   <title>JSSPORT | Welcome</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+     $(function() {
+
+       $(".toggle").on("click", function(){
+
+         if($(".item").hasClass("active")){
+             $(".item").removeClass("active");
+         }
+         else{
+           $(".item").addClass("active");
+         }
+       })
+     });
+     </script>
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+       <ul class="menu">
+         <li class="logo"><a href="#">サービス名</a></li>
+         <li class="item"><a href="">Home</a></li>
+         <li class="item"><a href="#">About</a></li>
+         <li class="item"><a href="#">Services</a></li>
+         <li class="item button"><a href="#">Login</a></li>
+         <li class="item button secondary"><a href="#">Sign Up</a></li>
+         <li class="toggle"><span class="bars"></span></li>
+       </ul>
+      </nav>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>サービスのテーマ！</h1>
+        <form>
+           <div class="form-box">
+             <input class="search-field skills" type="text" name="search" placeholder="Skills, keywords..."/>
+             <input class="search-field location" type="text" name="location" placeholder="Location..."/>
+              <button class="search-btn" type="button">Search</button>
+          </div>
+
+        </form>
+        <p>理想の送り出し機関を見つけよう！的な文章をここに挿入する</p>
+
+      </div>
+    </section>
+
+ <div class="bodyline">
+
+ </div>
+
+
+
+　　
+    <div id="articlecontainer">
+        <div class="article">
+          <img src="{% static 'company/s04.png' %}" width=300px>
+          <h3 class="article">News</h3>
+          <p class="article">All you need is a laptop. You can learn whereever you want. Reservation made simple! Just login to our portal site and that will do!!</p>
+        </div>
+        <div class="article">
+          <img src="{% static 'company/s04.png' %}" width=300px>
+          <h3 class="article">Featured comany</h3>
+          <p class="article">All you need is a laptop. You can learn whereever you want. Reservation made simple! Just login to our portal site and that will do!!</p>
+        </div>
+        <div class="article">
+          <img src="{% static 'company/s04.png' %}" width=300px>
+          <h3 class="article">Etc</h3>
+          <p class="article">All you need is a laptop. You can learn whereever you want. Reservation made simple! Just login to our portal site and that will do!!</p>
+        </div>
+    </div>
+
+    <footer>
+       <p class="copyright">Edward Japan, Copyright 2019</p>
+    </footer>
