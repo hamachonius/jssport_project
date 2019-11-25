@@ -5,13 +5,14 @@
 
   <head>
          {% load static %}
+         {% load sass_tags %}
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <meta name="description" content="companyinfo">
       <meta name="keywords" content="company, career, Japan">
       <meta name="author" content="Naoki Hamanaka">
-      <link rel="stylesheet" type="text/css" href="{% static 'company/home.css' %}">
-   <title>JSSPORT | Welcome</title>
+      <link rel="stylesheet" type="text/css" href="{% sass_src 'company/home.scss' %}">
+      <title>JSSPORT | Welcome</title>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -1,0 +1,311 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/*Global */
+    .headercontainer{
+      width:80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    ul{
+      margin:-10px;
+      padding:0;
+    }
+
+    .button_1{
+      height: 38px;
+      background: #84914d;
+      border: 0;
+      padding-left: 2
+    }
+    /*Header */
+
+    body{
+      font-family: sans-serif;
+    }
+
+    nav{
+      background: #dc8b8b;
+      padding: 5px 20px;
+    }
+    ul{
+      list-style-type: none;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+
+    .menu li{
+      font-size: 16px;
+      padding: 15px 5px;
+    }
+    .menu li a{
+      display: block;
+    }
+    .logo a{
+      font-size:20px;
+    }
+    .button.secondary{
+      border-bottom: 1px #444 solid;
+    }
+
+    /* Mobie menu*/
+    .menu{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .toggle{
+     order:1;
+    }
+    .item.button{
+      order:2;
+    }
+    .item{
+      width:100%;
+      text-align: center;
+      order:3;
+      display:none;
+    }
+    .item.active{
+      display: block;
+    }
+    .toggle{
+     cursor: pointer;
+    }
+
+    .bars{
+      background: #f7f1f1;
+      display: inline-block;
+      position: relative;
+      width: 18px;
+    }
+    .bars::before,.bars::after{
+      background: #999;
+      content: "";
+      display: inline-block;
+      height: 2px;
+      position: absolute;
+      width: 18px;
+    }
+    .bars::before{
+      top: 5px;
+    }
+    .bars::after{
+      top:-5px;
+    }
+
+    /*
+    Talet display
+
+    現時点では、<header>の設定しかしてないので、<main>にも設定を施す。
+    　flex
+
+    */
+    @media all and (min-width:468px){
+      .menu{
+        justify-content: center;
+      }
+      .logo{
+        flex:1;
+      }
+      .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+      }
+      .toggle{
+        order:2;
+      }
+      .button.secondary{
+        border:0;
+      }
+      .button a{
+        text-decoration: none;
+        padding: 7px 15px;
+        background: #ce1f27;
+        border: 1px solid #8c1b20;
+        border-radius:50em;
+
+      }
+      .button.secondary a{
+        background: transparent;
+
+      }
+      .button a:hover{
+        transition:all .25s;
+      }
+      .button:not(.secondary) a:hover{
+        background: #9a171d;
+        border-color: #8c1319;
+
+      }
+      .button.secondary a:hover{
+        color: #ddd;
+      }
+    }
+
+    @media all and (min-width: 768px){
+      .item{
+        display: block;
+        width: auto;
+
+      }
+      .toggle{
+        display: none;
+      }
+      .logo{
+        order: 0;
+      }
+      .item{
+        order: 1;
+      }
+      .button{
+        order: 2;
+      }
+      .menu li{
+        padding: 15px 10px;
+      }
+      .menu li.button{
+        padding-right: 0;
+      }
+
+      }
+
+/*
+ ここから下は、以下の項目を全て flex-boxで書き換える
+  *要素の幅
+    flex-basis: px;
+    height: ;
+  *要素の幅固定
+    flex-shrink: 0;
+  *要素の配列(横並び)
+    display: flex;
+    flex: direction: row;
+  *要素間ギャップ
+    margin: ;
+
+ */
+
+
+
+div.form-box{
+  background: rgba(255, 225, 225, 0.5);
+  padding: 10px 10px;
+  width: fit-content;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#searchresult h1{
+ width: auto;
+
+}
+
+.search-field{
+  height: 10px;
+  padding: 10px;
+}
+.skills{
+  width: 350px;
+}
+.location{
+  width: 150px;
+}
+.search-btn{
+  height: 35px;
+  width: 100px;
+  background: #f44336;
+  border: none;
+  color: #fff;
+}
+.search-btn:hover{
+  background: #bb0d00;
+  cursor: pointer;
+}
+
+
+
+div.bodyline{
+  height: 10px;
+  background-color: #dc8b8b;
+}
+
+
+
+
+
+
+/*ここから下は検索結果*/
+
+main{
+
+}
+div.bodycontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+/*ここにsidebarの検索窓を書く*/
+div.sidebar{
+  background-color: lightblue;
+  height: 800px;
+  flex-basis: 300px;
+  position: sticky;
+  top: 20px;
+  margin-top: 20px;
+}
+
+
+article{
+
+ margin-left: 30px;
+ margin-right: 40px;
+}
+
+
+div.article{
+  height: 300px;
+  margin-top: 20px;
+  flex-basis: 300px;
+  background-color: white;
+}
+
+img{
+ margin-left: 0px;
+ margin-right: 0px;
+}
+
+h3.article{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+p.article{
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/*-----------------変更を加えました---------------------------*/
+
+p.copyright{
+text-align: center;
+}

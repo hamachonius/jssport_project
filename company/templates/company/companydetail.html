@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+      {% load static %}
+      {% load sass_tags %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="Online Japanese Language School">
+      <meta name="keywords" content="Japanese, Language, Anime, Japan">
+      <meta name="author" content="Naoki Hamanaka">
+      <link rel="stylesheet" type="text/css" href="{% sass_src 'company/companyDetail.scss' %}">
+      <title>JSSPORT | Welcome</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+     $(function() {
+
+       $(".toggle").on("click", function(){
+
+         if($(".item").hasClass("active")){
+             $(".item").removeClass("active");
+         }
+         else{
+           $(".item").addClass("active");
+         }
+       })
+     });
+     </script>
+  </head>
+
+<body>
+
+
+  <header>
+    <nav>
+     <ul class="menu">
+       <li class="logo"><a href="#">サービス名</a></li>
+       <li class="item"><a href="">Home</a></li>
+       <li class="item"><a href="#">About</a></li>
+       <li class="item"><a href="#">Services</a></li>
+       <li class="item button"><a href="#">Login</a></li>
+       <li class="item button secondary"><a href="#">Sign Up</a></li>
+       <li class="toggle"><span class="bars"></span></li>
+     </ul>
+    </nav>
+  </header>
+<!--ログイン要素-->
+<div class="header-right">
+  <div class="login"id="login-show">ログイン</div>
+  </div>
+<div class="signup-modal-wrapper" id="signup-model">
+</div>
+<div class="login-modal-wrapper" id="login-modal">
+  <div class="modal">
+    <div id="login-form">
+      <h2>Emailログイン</h2>
+      <form action="#">
+        <input class="form-control" type="text" placeholder="メールアドレス">
+        <input class="form-control" type="password" placeholder="パスワード">
+        <div id="submit-btn">ログイン</div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="top-wrapper">
+    <!-- "signup-show"というclassをつけてください -->
+    <div class="btn signup signup-show">新規登録はこちら</div>
+    <p>or</p>
+    <div class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</div>
+    <div class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</div>
+  </div>
+</div>
+<!--ここまでログイン-->
+
+　<div class="header">
+  </div>
+
+  <div class="contents">
+    <img src="../img/yjimage2.jpg" width=300px>
+    <div class="contents-box">
+      <div class="box-table">
+        <div class="table-1">
+          <h1>紹介する文章</h1>
+          <p>内容pppppppppppppppppppp</p>
+  　　　 </div>
+　　     <div class="table-2">
+  　　    <h1>紹介する文章</h1>
+  　　    <p>内容pppppppppppppppppppp</p>
+　　　   </div>
+        <div class="table-3">
+         <h1>紹介する文章</h1>
+         <p>内容ppppppppppppppppp</p>
+　　　   </div>
+        <div class="table-4">
+         <h1>紹介する文章</h1>
+         <p>内容pppppppppppppppp</p>
+　　　   </div>
+      </div>
+      <div class="box-map">
+      </div>
+    </div>
+    <div class="contents-form">
+     <p>コメント</p>
+     <textarea></textarea>
+     <input class="contents-form" type="submit" value="Send">
+  　</div>
+ </div>
+ </body>
+
+    <footer>
+       <p class="copyright">Edward Japan, Copyright 2019</p>
+    </footer>
+<script src="script.js"></script>
+  </body>
+</html>
