@@ -1,59 +1,8 @@
+{% extends 'base.html' %}
 
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-  <head>
-         {% load static %}
-         {% load sass_tags %}
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <meta name="description" content="companyinfo">
-      <meta name="keywords" content="company, career, Japan">
-      <meta name="author" content="Naoki Hamanaka">
-      <link rel="stylesheet" type="text/css" href="{% sass_src 'company/home.scss' %}">
-      <title>JSSPORT | Welcome</title>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-     $(function() {
-
-       $(".toggle").on("click", function(){
-
-         if($(".item").hasClass("active")){
-             $(".item").removeClass("active");
-         }
-         else{
-           $(".item").addClass("active");
-         }
-       })
-     });
-     </script>
-  </head>
-
+{% block content %}
+{% load static %}
   <body>
-
-    <header>
-      <nav>
-       <ul class="menu">
-         <li class="logo"><a href="#">サービス名</a></li>
-         <li class="item"><a href="">Home</a></li>
-         <li class="item"><a href="#">About</a></li>
-         <li class="item"><a href="#">Services</a></li>
-           {% if user.is_authenticated %}
-           <form id="logout" action="{% url 'logout' %}" method="POST">
-            {% csrf_token %}
-            <input type="hidden" />
-          </form>
-          {% else %}
-          <li class="item button"><a href="{% url 'login' %}">Login</a></li>
-          <li class="item button secondary"><a href="{% url 'signup' %}">Sign Up</a></li>
-          {% endif %}
-         <li class="toggle"><span class="bars"></span></li>
-       </ul>
-      </nav>
-    </header>
 
     <section id="showcase">
       <div class="container">
@@ -96,6 +45,4 @@
         </div>
     </div>
 
-    <footer>
-       <p class="copyright">Edward Japan, Copyright 2019</p>
-    </footer>
+{% endblock %}
