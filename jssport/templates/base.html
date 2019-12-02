@@ -11,7 +11,7 @@
       <meta name="description" content="companyinfo">
       <meta name="keywords" content="company, career, Japan">
       <meta name="author" content="Naoki Hamanaka">
-      <link rel="stylesheet" type="text/css" href="{% sass_src 'company/home.scss' %}">
+      <link rel="stylesheet" type="text/css" href="{% sass_src 'company/base.scss' %}">
       <title>JSSPORT | Welcome</title>
 
 
@@ -37,8 +37,8 @@
     <header>
       <nav>
        <ul class="menu">
-         <li class="logo"><a href="#">サービス名</a></li>
-         <li class="item"><a href="">Home</a></li>
+         <li class="logo"><a href="#">JSSPORT</a></li>
+         <li class="item"><a href="#">Home</a></li>
          <li class="item"><a href="#">About</a></li>
          <li class="item"><a href="#">Services</a></li>
            {% if user.is_authenticated %}
@@ -60,11 +60,7 @@
         {% endblock %}
       </div>
 
-    <footer>
-       <p class="copyright">Edward Japan, Copyright 2019</p>
 
-    </footer>
-    <footer class="text-muted">
       <div class="container text-center">
-      <p>© JSSPORT {% now "Y" %}</p>
+      <p>© Naoki Hamanaka {% now "Y" %}</p>
       </div>
