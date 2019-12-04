@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jishusei.apps.JishuseiConfig',
     'company.apps.CompanyConfig',
     'account.apps.AccountConfig',
     'django.contrib.admin',
