@@ -10,3 +10,8 @@ root@django-jssport:~# adduser jssportdeploy
 
 postgres username: jssportdb
 password: su0402showa46
+
+
+postgres
+new id jssportdb
+new password jssporter
