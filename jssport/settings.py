@@ -81,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'jssport',
-        'USER':'postgres',
-        'PASSWORD':'nh3924su',
+        'USER':'jssportdb',
+        'PASSWORD':'su0402showa46',
         'HOST':'localhost',
         'PORT':'5432',
     }
@@ -131,7 +131,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass
 
