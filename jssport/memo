@@ -12,6 +12,6 @@ postgres username: jssportdb
 password: su0402showa46
 
 
-postgres
-new id jssportdb
-new password jssporter
+postgres jssportdb
+new id jssporter
+new password su0402showa46
