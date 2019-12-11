@@ -20,3 +20,12 @@ password: su0402showa46
 postgres jssportdb
 new id jssporter
 new password su0402showa46
+
+
+
+local server 開き方
+　1. virtual environmentを立ち上げる
+      jssportのディレクトリに移動して、source jssvenv/bin/activate
+  2. jssport_projectのディレクトリに移動
+      cd jssport_project
+  3   python manage.py runserver
