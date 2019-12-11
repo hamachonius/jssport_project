@@ -3,10 +3,9 @@ from django.contrib.auth.models import User
 
 class Company(models.Model):
     name = models.CharField(max_length=255)
-    summary = models.TextField()
-    location = models.TextField()
+    summary_or_promotion = models.TextField()
+    location = models.CharField(max_length=255)
     image = models.ImageField(upload_to='images/')
-    icon = models.ImageField(upload_to='images/')
     evaluation = models.IntegerField(default=1)
     companyid = models.ForeignKey(User, on_delete=models.CASCADE)
 
