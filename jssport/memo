@@ -16,8 +16,7 @@ server password: sg1118showa5mackiegucchi
 root@django-jssport:~# adduser jssportdeploy
 
 postgres username: jssportdb
-password: su0402showa46
-
+password:
 
 postgres jssportdb
 new id jssporter
@@ -31,3 +30,4 @@ local server 開き方
   2. jssport_projectのディレクトリに移動
       cd jssport_project
   3   python manage.py runserver
+ssssss
