@@ -1,4 +1,5 @@
-Username: edwardjapan
+ super user
+Username: jssportdeploy
 password: jssport1118
 
 
@@ -10,3 +11,8 @@ root@django-jssport:~# adduser jssportdeploy
 
 postgres username: jssportdb
 password: su0402showa46
+
+
+postgres jssportdb
+new id jssporter
+new password su0402showa46

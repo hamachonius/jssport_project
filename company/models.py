@@ -7,7 +7,7 @@ class Company(models.Model):
     location = models.TextField()
     image = models.ImageField(upload_to='images/')
     icon = models.ImageField(upload_to='images/')
-    votes_total = models.IntegerField(default=1)
+    evaluation = models.IntegerField(default=1)
     companyid = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
