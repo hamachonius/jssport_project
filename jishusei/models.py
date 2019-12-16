@@ -5,7 +5,7 @@ class Jishusei(models.Model):
     name = models.CharField(max_length=50)
     introduction = models.TextField()
     edu_background_duration_y = models.IntegerField()
-    edu_background_duration_m = models.IntegerFields()
+    edu_background_duration_m = models.IntegerField()
     carrer_background = models.TextField()
     profile_pic = models.ImageField(upload_to='profile_pic/')
 
