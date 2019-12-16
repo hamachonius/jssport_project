@@ -2,17 +2,32 @@
 Username: jssportdeploy
 password: jssport1118
 
+edwardjapan0402
+edworldjaponica
 
 12/04/2019 Shinjuku Carlos
 
+
+command: ssh jssportdeploy@159.203.22.162
+server password: jssportdeploy
 server password: sg1118showa5mackiegucchi
+
 
 root@django-jssport:~# adduser jssportdeploy
 
 postgres username: jssportdb
-password: su0402showa46
-
+password:
 
 postgres jssportdb
 new id jssporter
 new password su0402showa46
+
+
+
+local server 開き方
+　1. virtual environmentを立ち上げる
+      jssportのディレクトリに移動して、source jssvenv/bin/activate
+  2. jssport_projectのディレクトリに移動
+      cd jssport_project
+  3   python manage.py runserver
+ssssss
