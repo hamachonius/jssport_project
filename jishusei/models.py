@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 class Jishusei(models.Model):
     name = models.CharField(max_length=50)
     introduction = models.TextField()
-    edu_background = models.TextField()
+    edu_background_duration_y = models.IntegerField()
+    edu_background_duration_m = models.IntegerFields()
+
     carrer_background = models.TextField()
     profile_pic = models.ImageField(upload_to='profile_pic/')
