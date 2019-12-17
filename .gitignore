@@ -9,3 +9,5 @@ __pycache__/
 local_settings.py
 /media
 /static
+company/migrations/0002_auto_20191211_0418.py
+company/migrations/0002_auto_20191211_0418.py
