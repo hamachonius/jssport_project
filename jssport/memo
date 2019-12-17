@@ -21,9 +21,10 @@ password: su0402showa46
 
 postgres jssportdb
 new id jssporter
-new password su0402showa46
+new password
 
-
+jssport
+su0402showa46
 
 local server 開き方
 　1. virtual environmentを立ち上げる
