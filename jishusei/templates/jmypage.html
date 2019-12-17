@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if error %}
+{{ error }}
+<br/>
+<br/>
+{% endif %}
+
+<h1>Create your profile!</h1>
+
+<form method="POST" action="{% url 'create' %}" enctype="multipart/form-data">
+  {% csrf_token %}
+  Company name:
+  <br />
+  <input type="text" name="name" />
+  <br />
+  Introduction:
+  <br />
+  <input type="textbox" name="introduction" />
+  <br />
+  URL:
+  <br />
+  <input type="url" name="url" />
+  <br />
+  Image:
+  <br />
+  <input type="file" name="image" />
+  <br />
+  <input class="button" type="submit" value="Add Company" />
+  </form>
+
+{% endblock %}
