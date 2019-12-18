@@ -2,7 +2,11 @@
 
 {% block content %}
 {% load static %}
+{% load sass_tags %}
 {% csrf_token %}
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% sass_src 'company/home.scss' %}">
+  </head>
   <body>
 
     <section id="showcase">
@@ -13,6 +17,7 @@
              <input class="search-field skills" type="text" name="search" placeholder="Skills, keywords..."/>
              <input class="search-field location" type="text" name="location" placeholder="Location..."/>
               <button class="search-btn" type="button">Search</button>
+
           </div>
 
         </form>

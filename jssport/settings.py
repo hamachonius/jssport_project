@@ -81,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'jssport',
-        'USER':'jssportdb',
-        'PASSWORD':'su0402showa46',
+        'USER':'jssporter',
+        'PASSWORD':'localjsspwd',
         'HOST':'localhost',
         'PORT':'5432',
     }
