@@ -3,8 +3,10 @@ from django.contrib.auth.decorators import login_required
 from .models import Company
 from django.utils import timezone
 # Create your views here.
-def home(request):
+def home (request):
     return render(request, 'company/home.html')
+def companydetail (request):
+    return render(request, 'company/companydetail.html')
 
 @login_required
 def create (request):
