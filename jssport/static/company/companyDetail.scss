@@ -1,11 +1,29 @@
+.container {
+  width:90%;
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
 
-nav{
-  box-shadow: 0px 10px 8px 2px #00000040;
-  background-color: rgba(255,255,255, 0.9);
 
 }
+.level.a {
+ border-color: #999;
+ border-style: solid;
+ border-width: 1px;
+ height: auto;
+ flex-basis: 500px;
+ flex-grow: 0;
+ flex-shrink: 0;
 
-div.level_a{
+
+}
+.level.a.left {
+ margin-right: 20px;
+}
+
+.level.b {
+ background-color: white;
+
 
 }
 

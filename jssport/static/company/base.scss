@@ -2,7 +2,7 @@ body{
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding:0;
   margin:0;
-  background-color: rgb(244, 244, 244);
+  background-color: rgb(245, 245, 245);
 }
 
 /*Global */
@@ -35,9 +35,9 @@ body{
         }
 
           nav{
-            background: rgba(225, 225, 225, 0.9);
+            background-color: rgba(255,255,255, 0.9);
             padding: 5px 20px;
-            box-shadow: 0px 10px 8px 2px #00000040;
+            box-shadow: 0px 3px 8px 2px #00000040;
           }
               ul{
                 list-style-type: none;
@@ -194,6 +194,10 @@ body{
 
 
 
-  p.copyright{
-  text-align: center;
+  .copyright {
+   width: 100%;
   }
+
+p{
+  text-align: center;
+}

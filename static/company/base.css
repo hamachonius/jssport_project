@@ -1,4 +1,4 @@
-body { font: 15px/1.5 Arial, Helvetica, sans-serif; padding: 0; margin: 0; background-color: #f4f4f4; }
+body { font: 15px/1.5 Arial, Helvetica, sans-serif; padding: 0; margin: 0; background-color: whitesmoke; }
 
 /*Global */
 .container { width: 80%; margin: auto; overflow: hidden; }
@@ -12,7 +12,7 @@ body { font-family: sans-serif; }
 
 header { position: fixed; width: 100%; }
 
-nav { background: rgba(225, 225, 225, 0.9); padding: 5px 20px; box-shadow: 0px 10px 8px 2px #00000040; }
+nav { background-color: rgba(255, 255, 255, 0.9); padding: 5px 20px; box-shadow: 0px 3px 8px 2px #00000040; }
 
 ul { list-style-type: none; }
 
@@ -55,6 +55,8 @@ a:hover { text-decoration: underline; }
 @media all and (min-width: 768px) { .item { display: block; width: auto; } .toggle { display: none; } .logo { order: 0; } .item { order: 1; } .button { order: 2; } .menu li { padding: 15px 10px; } .menu li.button { padding-right: 0; } }
 
 /*showcase*/
-p.copyright { text-align: center; }
+.copyright { width: 100%; }
+
+p { text-align: center; }
 
 /*# sourceMappingURL=base.css.map */
