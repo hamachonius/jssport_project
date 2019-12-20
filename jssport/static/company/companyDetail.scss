@@ -1,265 +1,35 @@
+.codehere {
+  width:80%;
+  display: flex;
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
+
+
+}
+section {
+ border-color: #999;
+ border-style: solid;
+ border-width: 1px;
+ height: auto;
+ flex-basis: 300px;
+ flex-grow: 1;
+ flex-shrink: 0;
+ max-width: 500px;
+
+
+}
+.left {
+ margin-right: 20px;
+}
+
+.level.b {
+ background-color: white;
+
+
+}
+
 body{
-  font: 15px/1.5 Arial, Helvetica, sans-serif;
-  padding:0;
-  margin:0;
-  background-color:#f4f4f4;
-}
 
-/*Global */
-    .headercontainer{
-      width:80%;
-      margin: auto;
-      overflow: hidden;
-    }
-
-    ul{
-      margin:-10px;
-      padding:0;
-    }
-
-    .button_1{
-      height: 38px;
-      background: #84914d;
-      border: 0;
-      padding-left: 2
-    }
-    /*Header */
-
-    body{
-      font-family: sans-serif;
-    }
-
-    nav{
-      background: #dc8b8b;
-      padding: 5px 20px;
-    }
-    ul{
-      list-style-type: none;
-    }
-    a{
-      color: white;
-      text-decoration: none;
-    }
-    a:hover{
-      text-decoration: underline;
-    }
-
-    .menu li{
-      font-size: 16px;
-      padding: 15px 5px;
-    }
-    .menu li a{
-      display: block;
-    }
-    .logo a{
-      font-size:20px;
-    }
-    .button.secondary{
-      border-bottom: 1px #444 solid;
-    }
-
-    /* Mobie menu*/
-    .menu{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .toggle{
-     order:1;
-    }
-    .item.button{
-      order:2;
-    }
-    .item{
-      width:100%;
-      text-align: center;
-      order:3;
-      display:none;
-    }
-    .item.active{
-      display: block;
-    }
-    .toggle{
-     cursor: pointer;
-    }
-
-    .bars{
-      background: #f7f1f1;
-      display: inline-block;
-      position: relative;
-      width: 18px;
-    }
-    .bars::before,.bars::after{
-      background: #999;
-      content: "";
-      display: inline-block;
-      height: 2px;
-      position: absolute;
-      width: 18px;
-    }
-    .bars::before{
-      top: 5px;
-    }
-    .bars::after{
-      top:-5px;
-    }
-
-    /*
-    Talet display
-
-    現時点では、<header>の設定しかしてないので、<main>にも設定を施す。
-    　flex
-
-    */
-    @media all and (min-width:468px){
-      .menu{
-        justify-content: center;
-      }
-      .logo{
-        flex:1;
-      }
-      .item.button{
-        width: auto;
-        order: 1;
-        display: block;
-      }
-      .toggle{
-        order:2;
-      }
-      .button.secondary{
-        border:0;
-      }
-      .button a{
-        text-decoration: none;
-        padding: 7px 15px;
-        background: #ce1f27;
-        border: 1px solid #8c1b20;
-        border-radius:50em;
-
-      }
-      .button.secondary a{
-        background: transparent;
-
-      }
-      .button a:hover{
-        transition:all .25s;
-      }
-      .button:not(.secondary) a:hover{
-        background: #9a171d;
-        border-color: #8c1319;
-
-      }
-      .button.secondary a:hover{
-        color: #ddd;
-      }
-    }
-
-    @media all and (min-width: 768px){
-      .item{
-        display: block;
-        width: auto;
-
-      }
-      .toggle{
-        display: none;
-      }
-      .logo{
-        order: 0;
-      }
-      .item{
-        order: 1;
-      }
-      .button{
-        order: 2;
-      }
-      .menu li{
-        padding: 15px 10px;
-      }
-      .menu li.button{
-        padding-right: 0;
-      }
-
-      }
-      /*login要素*/
-      .login-modal-wrapper, .signup-modal-wrapper {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-
-  display: none;
-}
-
-.modal {
-  position: absolute;
-  top: 20%;
-  left: 34%;
-  background-color: #e6ecf0;
-  padding: 20px 0 40px;
-  border-radius: 10px;
-  width: 450px;
-  height: auto;
-  text-align: center;
-}
-
-.fa-times {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  color: rgba(128, 128, 128, 0.46);
-  cursor: pointer;
-}
-
-#signup-form, #login-form {
-  width: 100%;
-}
-
-#signup-form h2, #login-form h2 {
-  color: #5f5d60;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
-}
-
-#signup-form input, #login-form input {
-  width: 320px;
-  margin-bottom: 20px;
-  font-size: 12px;
-  padding: 12px 12px;
-  border: 1px solid #d0d5d8;
-  border-radius: 5px;
-}
-
-#submit-btn {
-  display: inline-block;
-  padding: 14px 140px;
-  background-color: #5dca88;
-  border: none;
-  border-radius: 3px;
-  color: white;
-  margin: 10px auto;
-  cursor: pointer;
-}
-/*ここまでlogin要素*/
-
-/*
- ここから下は、以下の項目を全て flex-boxで書き換える
-  *要素の幅
-    flex-basis: px;
-    height: ;
-  *要素の幅固定
-    flex-shrink: 0;
-  *要素の配列(横並び)
-    display: flex;
-    flex: direction: row;
-  *要素間ギャップ
-    margin: ;
-
- */
-.contents {
-  padding: 20px;
 }

@@ -1,87 +1,85 @@
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-  <head>
-      {% load static %}
-      {% load sass_tags %}
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <meta name="description" content="Online Japanese Language School">
-      <meta name="keywords" content="Japanese, Language, Anime, Japan">
-      <meta name="author" content="Naoki Hamanaka">
-      <link rel="stylesheet" type="text/css" href="{% sass_src 'company/companyDetail.scss' %}">
-      <title>JSSPORT | Welcome</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-     $(function() {
-
-       $(".toggle").on("click", function(){
-
-         if($(".item").hasClass("active")){
-             $(".item").removeClass("active");
-         }
-         else{
-           $(".item").addClass("active");
-         }
-       })
-     });
-     </script>
-  </head>
-
-<body>
+{% block content %}
+{% load static %}
+{% load sass_tags %}
+<!--コード書く ここから-->
+<head>
+  <link rel="stylesheet" type="text/css" href="{% sass_src 'company/companyDetail.scss' %}">
+</head>
 
 
-  <header>
-    <nav>
-     <ul class="menu">
-       <li class="logo"><a href="#">サービス名</a></li>
-       <li class="item"><a href="">Home</a></li>
-       <li class="item"><a href="#">About</a></li>
-       <li class="item"><a href="#">Services</a></li>
-       <li class="item button"><a href="#">Login</a></li>
-       <li class="item button secondary"><a href="#">Sign Up</a></li>
-       <li class="toggle"><span class="bars"></span></li>
-     </ul>
-    </nav>
-  </header>
+            <section class="left">　<!--companyのメインと詳細とメディア(写真など)-->
 
-  <div class="contents">
-    <img src="../img/yjimage2.jpg" width=300px>
-    <div class="contents-box">
-      <div class="box-table">
-        <div class="table-1">
-          <h1>紹介する文章</h1>
-          <p>内容pppppppppppppppppppp</p>
-  　　　 </div>
-　　     <div class="table-2">
-  　　    <h1>紹介する文章</h1>
-  　　    <p>内容pppppppppppppppppppp</p>
-　　　   </div>
-        <div class="table-3">
-         <h1>紹介する文章</h1>
-         <p>内容ppppppppppppppppp</p>
-　　　   </div>
-        <div class="table-4">
-         <h1>紹介する文章</h1>
-         <p>内容pppppppppppppppp</p>
-　　　   </div>
-      </div>
-      <div class="box-map">
-      </div>
-    </div>
-    <div class="contents-form">
-     <p>コメント</p>
-     <textarea></textarea>
-     <input class="contents-form" type="submit" value="Send">
-  　</div>
- </div>
- </body>
 
-    <footer>
-       <p class="copyright">Edward Japan, Copyright 2019</p>
-    </footer>
-<script src="script.js"></script>
-  </body>
-</html>
+         <!-- ____________________________________________ -->
+                  <div class="main">
+                       <div class="header_container">
+                          <div class="header_photo" style="{}"> <!-- cssでbackground-image -->
+
+                          </div>
+
+                          <div class="verified" style="{}"> <!--  -->
+
+                          </div>
+                      </div>
+
+                      <div class="info_container"> <!--  -->
+                          <h1>{会社名}</h1> <!-- -->
+                          <div class="evaluation" style="{}"> <!--  --> </div>
+                          <div class="buttons">
+                              <div class="buttons_left">
+                                  <div class="bookmark">
+                                    <button type="button" class="bookmark_logo"></button>
+                                  </div>
+                                  <div class="share">
+                                  </div>
+                              </div>
+                              <div class="buttons_contact">
+
+                              </div>
+
+
+                          </div>
+
+                      </div>
+
+
+                  </div>
+         <!-- ____________________________________________ -->
+
+                  <div class="detail">
+
+                  </div>
+         <!-- ____________________________________________ -->
+                  <div class="media">
+
+                  </div>
+<!-- ___________________________________________________________________ -->
+            </section>
+
+
+
+
+
+
+            <section class="right">　<!--レビュー-->
+
+                  <div class="level b review">
+                  </div>
+
+              <!--    <div class="level b media">
+              </div> -->
+
+            </section>
+
+
+             <!--companyのSNS投稿-->
+
+
+
+
+
+<!--コード書く ここまで-->
+
+{% endblock %}

@@ -2,11 +2,11 @@ body{
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding:0;
   margin:0;
-  background-color:white;
+  background-color: rgb(245, 245, 245);
 }
 
 /*Global */
-      .container{
+      .codehere{
         width:80%;
         margin: auto;
         overflow: hidden;
@@ -29,9 +29,15 @@ body{
         font-family: sans-serif;
       }
 
+        header{
+          position: fixed;
+          width: 100%;
+        }
+
           nav{
-            background: #f4f4f4;
+            background-color: rgba(255,255,255, 0.9);
             padding: 5px 20px;
+            box-shadow: 0px 3px 8px 2px #00000040;
           }
               ul{
                 list-style-type: none;
@@ -185,106 +191,13 @@ body{
 
   /*showcase*/
 
-    #showcase{
-      min-height: 200px;
-      background:url("/static/company/rainbow.jpg") no-repeat 0 -400px;
-      background-size:cover;
-      background-position: center;
-      text-align:center;
-      color:#ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #showcase h1{
-      margin-top: 70px;
-      font-size: 55px;
-      margin-bottom: 15px;
-
-    }
-
-    #showcase p{
-      font-size: 20px;
-    }
 
 
-  div.form-box{
-    background: rgba(255, 225, 225, 0.5);
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    margin-bottom: 10px;
-    width: fit-content;
-    margin: auto;
 
+  .copyright {
+   width: 100%;
   }
 
-          .search-field{
-            height: 10px;
-            padding: 10px;
-          }
-          .skills{
-            width: 350px;
-          }
-          .location{
-            width: 150px;
-          }
-          .search-btn{
-            height: 35px;
-            width: 100px;
-            background: #f44336;
-            border: none;
-            color: #fff;
-          }
-          .search-btn:hover{
-            background: #bb0d00;
-            cursor: pointer;
-          }
-
-
-
-
-      div.bodyline{
-        height: 10px;
-        background-color: #dc8b8b;
-      }
-
-  #articlecontainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-          div.article{
-            height: 300px;
-            margin-top: 20px;
-            flex-basis: 300px;
-            background-color: white;
-          }
-
-          img{
-           margin-left: 0px;
-           margin-right: 0px;
-          }
-
-          h3.article{
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-left: 5px;
-            margin-right: 5px;
-
-          }
-
-          p.article{
-            margin-top: 5px;
-            margin-left: 5px;
-            margin-right: 5px;
-            margin-bottom: 5px;
-          }
-
-
-
-  p.copyright{
+p{
   text-align: center;
-  }
+}
