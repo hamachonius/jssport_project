@@ -17,6 +17,7 @@ section {
  flex-grow: 1;
  flex-shrink: 0;
  max-width: 500px;
+ padding: 10px;
 
 
 }
@@ -32,4 +33,41 @@ section {
 
 body{
 
+}
+
+.main {
+  height: auto;
+  flex-basis: 250px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 450px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0.2px 0.2px 4px #00000040;
+}
+
+.header_container {
+height: 300px;
+}
+.header_photo {
+  background:url('/static/company/okuridashi_sample.jpg') no-repeat;
+  height: -webkit-fill-available;
+}
+
+.info_container_top {
+  display: flex;
+}
+ .company_name {
+  margin-left: 5%;
+}
+
+.brief_description {
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.evaluation {
+  margin: auto;
+  color: orange;
 }
