@@ -16,7 +16,7 @@ section {
  flex-basis: 300px;
  flex-grow: 1;
  flex-shrink: 0;
- max-width: 500px;
+ max-width: 700px;
  padding: 10px;
 
 
@@ -47,11 +47,16 @@ body{
 }
 
 .header_container {
-height: 300px;
+height: -webkit-fill-available;
+  margin: 0 auto;
 }
 .header_photo {
   background:url('/static/company/okuridashi_sample.jpg') no-repeat;
-  height: -webkit-fill-available;
+
+  background-position:center top;
+  background-size:100%;
+  min-height: 300px;
+  max-height: 400px;
 }
 
 .info_container_top {
@@ -64,10 +69,78 @@ height: 300px;
 .brief_description {
   margin-left: 10px;
   margin-right: 10px;
+  height: 100px;
 
 }
-
 .evaluation {
   margin: auto;
   color: orange;
 }
+
+
+.buttons {
+  display: flex;
+  margin: 0px 15px;
+
+
+}
+    .buttons_left{
+      display: flex;
+      height: fit-content;
+　　　　width: fit-content;
+
+
+    }
+          .bookmark_button {
+            margin: 0 auto;
+            height: 30px;
+            width: 30px;
+            border: none;
+            background:url('/static/company/heart.svg') no-repeat;
+            background-size: cover;
+
+        }
+            .bookmark_title {
+              font-size: 3px;
+              font-style: bold;
+              color: gray;
+            }
+
+          .share_button{
+            margin: 0 auto;
+            height: 30px;
+            width: 30px;
+            border: none;
+            background:url('/static/company/share.svg') no-repeat;
+            background-size: cover;
+          }
+          :focus .share_button {
+            outline: none;
+          }
+           .share_title {
+             font-size: 3px;
+             font-style: bold;
+             color: gray;
+
+
+           }
+
+    .buttons_contact {
+            height: 30px;
+            width: 100px;
+
+
+           }
+
+             .contact {
+               height: 30px;
+               width: 100px;
+               background-color: #3399FF;
+               border-radius: 20em;
+               color: white;
+               font-size: 15px;
+               outline: none;
+               font-style: bold;
+
+
+             }
