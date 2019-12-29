@@ -16,7 +16,7 @@ section {
  flex-basis: 300px;
  flex-grow: 1;
  flex-shrink: 0;
- max-width: 500px;
+ max-width: 700px;
  padding: 10px;
 
 
@@ -44,30 +44,118 @@ body{
   background-color: white;
   margin: 0 auto;
   box-shadow: 0.2px 0.2px 4px #00000040;
+  padding-bottom: 5px;
 }
 
 .header_container {
-height: 300px;
+height: -webkit-fill-available;
+  margin: 0 auto;
 }
 .header_photo {
   background:url('/static/company/okuridashi_sample.jpg') no-repeat;
-  height: -webkit-fill-available;
-}
 
-.info_container_top {
-  display: flex;
+  background-position:center top;
+  background-size:100%;
+  min-height: 300px;
+  max-height: 400px;
 }
- .company_name {
-  margin-left: 5%;
-}
+  .info_container{
+    height: auto;
+  }
+    .info_container_top {
+      display: flex;
 
-.brief_description {
-  margin-left: 10px;
-  margin-right: 10px;
 
-}
+    }
+     h1 {
+      margin: 0;
+       }
+       .company_name {
+        margin-left: 5%;
 
-.evaluation {
-  margin: auto;
-  color: orange;
-}
+      }
+
+      .brief_description {
+        margin: 10px 10px;
+
+        height: 100%;
+
+      }
+
+
+      .evaluation {
+        margin: auto;
+        color: orange;
+      }
+
+
+      .buttons {
+        display: flex;
+        margin: 0px 15px 5px;
+        justify-content: space-between;
+
+
+      }
+          .buttons_left{
+            display: flex;
+            height: fit-content;
+      　　　　width: fit-content;
+
+
+          }
+             .bookmark {
+               margin-right: 10px;
+             }
+                .bookmark_button {
+                  margin: 0 auto;
+                  height: 30px;
+                  width: 30px;
+                  border: none;
+                  background:url('/static/company/heart.svg') no-repeat;
+                  background-size: cover;
+
+              }
+                  .bookmark_title {
+                    font-size: 3px;
+                    font-style: bold;
+                    color: gray;
+                  }
+
+                .share_button{
+                  margin: 0 auto;
+                  height: 30px;
+                  width: 30px;
+                  border: none;
+                  background:url('/static/company/share.svg') no-repeat;
+                  background-size: cover;
+                }
+                :focus .share_button {
+                  outline: none;
+                }
+                 .share_title {
+                   font-size: 3px;
+                   font-style: bold;
+                   color: gray;
+
+
+                 }
+
+          .buttons_contact {
+                  height: 30px;
+                  width: 100px;
+
+
+                 }
+
+                   .contact {
+                     height: 30px;
+                     width: 100px;
+                     background-color: #3399FF;
+                     border-radius: 20em;
+                     color: white;
+                     font-size: 15px;
+                     outline: none;
+                     font-style: bold;
+
+
+                   }
