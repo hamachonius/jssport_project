@@ -1,3 +1,50 @@
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// COLORS
+$color-primary: #d43366;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+
+// FONT
+$default-font-size: 1.6rem;
+
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+
+
+
+
+
+
+
+
 .codehere {
   width:90%;
   display: flex;
@@ -152,9 +199,21 @@ height: -webkit-fill-available;
                      font-size: 15px;
                      outline: none;
                      font-style: bold;
+                     display: block;
+
 
 
                    }
+
+                   .contact:hover {
+                     transform: translateY(-3px);
+                      text-decoration: none;
+
+                   }
+                   .contact:active {
+                     transform: translateY(-1px);
+                   }
+
 
 //-------detail-------------------------------------------//
 
@@ -198,3 +257,57 @@ form {
   margin-right: 10px;
 
 }
+
+//-------popup-------------------------------------------//
+
+    .popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, .8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+        &:target {
+          opacity: 1;
+          visibility: visible;
+        }
+        &__close {
+          &:link,
+          &:visited {
+            color: $color-grey-dark;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+          }
+          &:hover {
+            color: $color-primary;
+            text-decoration: none;
+          }
+        }
+
+
+/*    @supports (-webkit-backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);
+    }
+*/
+        &__content {
+            @include absCenter;
+            height: 50rem;
+            width: 75%;
+            background-color: $color-white;
+            box-shadow: 0 2rem 4rem rgba($color-black, .2);
+
+        }
+
+
+  }
