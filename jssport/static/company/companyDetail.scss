@@ -193,21 +193,21 @@ height: -webkit-fill-available;
                    .contact {
                      height: 30px;
                      width: 100px;
+                     padding-top: 5px;
                      background-color: #3399FF;
                      border-radius: 20em;
                      color: white;
                      font-size: 15px;
                      outline: none;
-                     font-style: bold;
+                     font-weight: bold;
                      display: block;
-
-
-
+                     text-align: center;
                    }
 
                    .contact:hover {
-                     transform: translateY(-3px);
+                  /*   transform: translateY(-3px); */
                       text-decoration: none;
+                      background-color: #165ca2;
 
                    }
                    .contact:active {
@@ -233,29 +233,39 @@ height: -webkit-fill-available;
 
 
 //-------reviews-------------------------------------------//
-form {
-  width: auto;
-  display: flex;
-  padding: 10px;
+.review {
+  padding: 15px;
+
+  &__head {
+    display: flex;
+  }
 
 }
+
 
 .input {
   height: 50px;
   width: auto;
   flex-basis: 200px;
   flex-grow: 1;
+  margin-top: 60px;
 
 
 }
-
+.input_button {
+  margin-top: 80px;
+}
 .profile_pic {
   height: 50px;
   width: 50px;
   border-radius: 50px;
-  background-color: green;
+  background: url('/static/company/naokihamanaka.jpg') no-repeat;
   margin-right: 10px;
+  background-size: cover;
 
+}
+.username {
+  color: black;
 }
 
 //-------popup-------------------------------------------//
@@ -266,7 +276,7 @@ form {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba($color-black, .8);
+    background-color: rgba($color-black, .4);
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
@@ -281,9 +291,9 @@ form {
           &:visited {
             color: $color-grey-dark;
             position: absolute;
-            top: 2.5rem;
-            right: 2.5rem;
-            font-size: 3rem;
+            top: 0rem;
+            right: 1rem;
+            font-size: 2.5rem;
             text-decoration: none;
             display: inline-block;
             transition: all .2s;
@@ -302,12 +312,35 @@ form {
 */
         &__content {
             @include absCenter;
-            height: 50rem;
-            width: 75%;
+            height: 25rem;
+            width: 50%;
             background-color: $color-white;
             box-shadow: 0 2rem 4rem rgba($color-black, .2);
+            padding: 5px;
 
         }
 
+        &__inquiry {
+           padding: 5%;
+         }
+
+         &__title {
+           width: 95%;
+           height: 30px;
+
+         }
+
+         &__text {
+           margin-top: 20px;
+           width: 95%;
+           height: 100px;
+         }
+
+  }
+
+  form {
+    width: auto;
+
+    padding: 10px;
 
   }
