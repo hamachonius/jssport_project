@@ -238,9 +238,35 @@ height: -webkit-fill-available;
 
   &__head {
     display: flex;
+    margin-bottom: 10px;
+  }
+  &__profilepic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: url('/static/company/naokihamanaka.jpg') no-repeat;
+    margin-right: 10px;
+    background-size: cover;
   }
 
+  &__username {
+    color: black;
+  }
+
+  &__content {
+
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
 }
+
 
 
 .input {
@@ -249,24 +275,13 @@ height: -webkit-fill-available;
   flex-basis: 200px;
   flex-grow: 1;
   margin-top: 60px;
-
-
 }
+
 .input_button {
   margin-top: 80px;
 }
-.profile_pic {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background: url('/static/company/naokihamanaka.jpg') no-repeat;
-  margin-right: 10px;
-  background-size: cover;
 
-}
-.username {
-  color: black;
-}
+
 
 //-------popup-------------------------------------------//
 
@@ -335,6 +350,8 @@ height: -webkit-fill-available;
            width: 95%;
            height: 100px;
          }
+
+
 
   }
 
