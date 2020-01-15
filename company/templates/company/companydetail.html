@@ -13,8 +13,7 @@
          <!-- ____________________________________________ -->
                   <div class="sub main">
                        <div class="header_container">
-                          <div class="header_photo"> <!-- cssでbackground-image -->
-                          </div>
+                          <img src="/static/company/okuridashi_sample.jpg" class="header_photo">
                           <div class="verified" style="{}"> <!--  -->
                           </div>
                       </div>
@@ -34,8 +33,7 @@
                                     <div class="bookmark_title" onclick="Added to your favorites">follow</div>
                                   </div>
                                   <div class="share">
-                                    <button type="button" class="share_button">
-                                    </button>
+                                    <button type="button" class="share_button"></button>
                                     <div class="share_title">share</div>
                                   </div>
                                   </div>
@@ -57,32 +55,66 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.4360671991235!2d139.78970225126187!3d35.715492680089106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188e9569ba6cab%3A0xcc19c71c2fe2d5a0!2z5rWF6I2J44OT44Ol44O844Ob44OG44Or!5e0!3m2!1sja!2sjp!4v1577557696221!5m2!1sja!2sjp" class="map"></iframe>
                       </div>
 
-                      <div class="detail established_year">2010年
-                             こんなことをやってます！！こんなところにあります！日本語教育の実績もこの通りです！ この送り出し機関をでた実習生はこのようなところで働いています。実習後のキャリア開発にも長けているこの送り出し機関をぜひお選びください！
+                      <div class="detail established_year">Established in 1990 <br><br> helped over 200 <br><br> etc <br><br>
+                        Videlicet distincta sequentia hic nia rom sufficiat infinitum meo affirmare. Quavis vacabo deesse et haereo ex ad. Duo sum ostenditur pensitatis occurreret perficitur dei age sequentium expectabam. Mea attingere rea assentiri numeranda eam fidelibus essentiae cau contineat. Ut eo an perfectae ecclesiae vi posuerunt scientiis excaecant. Videlicet distincta sequentia hic nia rom sufficiat infinitum meo affirmare. Quavis vacabo deesse et haereo ex ad.
+                        <br><br>
+                        Quavis vacabo deesse et haereo ex ad. Duo sum ostenditur pensitatis occurreret perficitur dei age sequentium expectabam. Mea attingere rea assentiri numeranda eam fidelibus essentiae cau contineat. Ut eo an perfectae ecclesiae vi posuerunt scientiis excaecant. Videlicet distincta sequentia hic nia rom sufficiat infinitum meo affirmare. Quavis vacabo deesse et haereo ex ad.
+                        <br><br>
                       </div>
 
                   </div>
 
          <!-- ____________________________________________ -->
 
-              <h1 class="title">Reviews</h1> <!-- -->
-               <!-- ____________________________________________ -->
-                  <div class="sub reviews">
+              <h1 class="title">Updates</h1> <!-- -->
+      <!-- ________________________sample updates___________________________________ -->
+                  <div class="sub posts">
 
-                      <div class="review">
 
-                         <div class="review__head">
-                             <div class="review__profilepic"></div>
-                             <a class="review__username">User Name</a>
+
+                         <div class="posts__head">
+                             <div class="posts__profilepic2"></div>
+                             <div class="posts__right">
+                               <a class="posts__username2">Gackt</a>
+                               <div class="posts__publisheddate">July 4, 2020</div>
+                             </div>
+                             <button type="button" class="posts__edit"></button>
+
                          </div>
 
-                         <div class="review__content">
-                             <div class="review__text">
+                         <div class="posts__content">
+                             <div class="posts__text">
                                Nulla sonos hoc eae caput dubio ullam. Ut eo an perfectae ecclesiae vi posuerunt scientiis excaecant. Videlicet distincta sequentia hic nia rom sufficiat infinitum meo affirmare. Quavis vacabo deesse et haereo ex ad. Duo sum ostenditur pensitatis occurreret perficitur dei age sequentium expectabam. Mea attingere rea assentiri numeranda eam fidelibus essentiae cau contineat. Desumptae chimaeram de ab profundum immittant devinctam cogitandi.
                              </div>
-                             <img src="{% static 'company/s04.png'%}" class="review__img"></img>
+                             <img src="{% static 'company/s04.png'%}" class="posts__img"></img>
+
+
+
+                      </div>
+
+                  </div>
+
+                  <div class="sub posts">
+
+
+
+                         <div class="posts__head">
+                             <div class="posts__profilepic2"></div>
+                             <div class="posts__right">
+                               <a class="posts__username2">Gackt</a>
+                               <div class="posts__publisheddate">July 4, 2020</div>
+                             </div>
+                             <button type="button" class="posts__edit"></button>
 
                          </div>
+
+                         <div class="posts__content">
+                             <div class="posts__text">
+                               Nulla sonos hoc eae caput dubio ullam. Ut eo an perfectae ecclesiae vi posuerunt scientiis excaecant. Videlicet distincta sequentia hic nia rom sufficiat infinitum meo affirmare. Quavis vacabo deesse et haereo ex ad. Duo sum ostenditur pensitatis occurreret perficitur dei age sequentium expectabam. Mea attingere rea assentiri numeranda eam fidelibus essentiae cau contineat. Desumptae chimaeram de ab profundum immittant devinctam cogitandi.
+                             </div>
+                             <img src="{% static 'company/1291412.jpg'%}" class="posts__img"></img>
+
+
 
                       </div>
 
@@ -90,15 +122,84 @@
 
 
 
-<!-- ___________________________________________________________________ -->
+<!-- _____________________________________________________________________________ -->
+
             </section>
 
 
-            <section class="right">　<!--レビュー-->
+            <section class="right">
+              <h1 class="title">Reviews</h1> <!-- -->
+               <!-- ____________________________________________ -->
+                  <div class="sub posts">
 
 
-              <!--    <div class="level b media">
-              </div> -->
+
+                         <div class="posts__head">
+
+                             <div class="posts__profilepic"></div>
+
+
+
+
+
+                             <div class="posts__middle">
+                               <a class="posts__username">Greta Thunberg</a>
+                               <div class="posts__publisheddate">July 4, 2020</div>
+                             </div>
+
+
+                            <button type="button" class="posts__edit"></button>
+
+
+                         </div>
+
+                         <div class="posts__content">
+                             <div class="posts__text">
+                               Nulla sonos hoc eae caput dubio ullam. Ut eo an perfectae ecclesiae vi posuerunt scientiis excaecant. Videlicet distincta sequentia hic nia rom sufficiat infinitum meo affirmare. Quavis vacabo deesse et haereo ex ad. Duo sum ostenditur pensitatis occurreret perficitur dei age sequentium expectabam. Mea attingere rea assentiri numeranda eam fidelibus essentiae cau contineat. Desumptae chimaeram de ab profundum immittant devinctam cogitandi.
+                             </div>
+                             <img src="{% static 'company/postsample.jpg'%}" class="posts__img"></img>
+
+
+
+                      </div>
+
+                  </div>
+
+                  <div class="sub posts">
+
+
+
+                         <div class="posts__head">
+
+                             <div class="posts__profilepic"></div>
+
+
+
+
+
+                             <div class="posts__middle">
+                               <a class="posts__username">Greta Thunberg</a>
+                               <div class="posts__publisheddate">July 4, 2020</div>
+                             </div>
+
+
+                            <button type="button" class="posts__edit"></button>
+
+
+                         </div>
+
+                         <div class="posts__content">
+                             <div class="posts__text">
+                               Nulla sonos hoc eae caput dubio ullam. Ut eo an perfectae ecclesiae vi posuerunt scientiis excaecant. Videlicet distincta sequentia hic nia rom sufficiat infinitum meo affirmare. Quavis vacabo deesse et haereo ex ad. Duo sum ostenditur pensitatis occurreret perficitur dei age sequentium expectabam. Mea attingere rea assentiri numeranda eam fidelibus essentiae cau contineat. Desumptae chimaeram de ab profundum immittant devinctam cogitandi.
+                             </div>
+                             <img src="{% static 'company/samplephoto.jpg'%}" class="posts__img"></img>
+
+
+
+                      </div>
+
+                  </div>
+
 
             </section>
 
@@ -111,13 +212,13 @@
 
                     <form class="inquiries" method="post">
 
-                         <div class="profile_pic"></div>
+                         <div class="posts__profilepic2"></div>
                             <div class="popup__inquiry">
                               <input type="text" class="popup__title" placeholder="title"/>
                             </br>
                               <input type="text" class="popup__text" placeholder="inquiry"/>
                             </br>
-                              <input type="submit" value="Send" class="input_button"/>
+                              <input type="image" src="{% static 'company/right-arrow.svg' %}" class="input_button" width="30px"/>
                             </div>
 
 
