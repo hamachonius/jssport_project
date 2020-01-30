@@ -68,18 +68,20 @@ section {
 
 }
 .left {
- margin-right: 20px;
+ margin-right: 30px;
  flex-basis: 300px;
- max-width: 750px;
+ max-width: 700px;
 }
 .right {
-  flex-basis: 250px;
+  flex-basis: 100px;
   padding-top: 45px;
   max-width: 500px;
 }
 
 
 .sub {
+  position: relative;
+  z-index: 99;
   height: auto;
   flex-basis: 250px;
   flex-grow: 1;
@@ -398,3 +400,91 @@ height: -webkit-fill-available;
     padding: 10px;
 
   }
+
+/*投稿のn編集ポップ*/
+  .editpop {
+  height: fit-content;
+  width: fit-content;
+  padding: 5px;
+  position: relative;
+  top: 0px;
+  right: -40px;
+  z-index: 110;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .1s;
+
+      &__contents {
+        position: absolute;
+        height: fit-content;
+        width: fit-content;
+        top: 0;
+        right: 0;
+
+
+      }
+
+      &:target {
+        opacity: 1;
+        visibility: visible;
+      }
+      &__close {
+        &:link,
+        &:visited {
+          color: $color-grey-dark;
+          position: absolute;
+          top: 0rem;
+          right: 1rem;
+          font-size: 2.5rem;
+          text-decoration: none;
+          display: inline-block;
+          transition: all .2s;
+        }
+        &:hover {
+          color: $color-primary;
+          text-decoration: none;
+        }
+      }
+
+
+/*    @supports (-webkit-backdrop-filter: blur(10px)) {
+      -webkit-backdrop-filter: blur(10px);
+      background-color: rgba($color-black, .3);
+  }
+*/
+      &__content {
+          @include absCenter;
+          height: 25rem;
+          width: 50%;
+          background-color: $color-white;
+          box-shadow: 0 2rem 4rem rgba($color-black, .2);
+          padding: 5px;
+
+      }
+
+      &__inquiry {
+         padding: 5%;
+       }
+
+       &__title {
+         width: 95%;
+         height: 30px;
+
+       }
+
+       &__text {
+         margin-top: 20px;
+         width: 95%;
+         height: 150px;
+       }
+
+
+
+}
+
+form {
+  width: auto;
+
+  padding: 10px;
+
+}

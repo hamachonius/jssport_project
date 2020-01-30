@@ -5,7 +5,7 @@
 {% load sass_tags %}
 {% csrf_token %}
   <head>
-    <link rel="stylesheet" type="text/css" href="{% sass_src 'company/home.scss' %}"
+    <link rel="stylesheet" type="text/css" href="{% sass_src 'company/home.scss' %}">
   </head>
   <body>
 
@@ -14,6 +14,7 @@
         <h1>サービスのテーマ！</h1>
         <form>
            <div class="form-box">
+             
              <input class="search-field skills" type="text" name="search" placeholder="Skills, keywords..."/>
              <input class="search-field location" type="text" name="location" placeholder="Location..."/>
               <button class="search-btn" type="button">Search</button>
@@ -54,5 +55,6 @@
           <p class="article">All you need is a laptop. You can learn wherever you want. Reservation made simple! Just login to our portal site and that will do!!</p>
         </div>
     </div>
+  </body>
 
 {% endblock %}
